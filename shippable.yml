@@ -23,7 +23,7 @@ build:
 
 integrations:
   hub:
-    - integrationName: #your artifactory integration name
+    - integrationName: Artifactory
       type: artifactory
 
   # notifications:
