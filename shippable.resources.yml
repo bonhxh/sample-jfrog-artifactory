@@ -4,12 +4,12 @@ resources:
 # VM Cluster
   - name: demo-war-test-cls
     type: cluster
-    integration: #your node cluster integration
+    integration: Tomcat
 
 # JFROG WAR reference
   - name: demo-war
     type: file
-    integration: #your node cluster integration
+    integration: Tomcat
     pointer:
       sourceName: builds/HelloWorld.war #update the repository name if needed
     seed:
