@@ -27,11 +27,7 @@ integrations:
       type: artifactory
 
   notifications:
-    - integrationName: webhook
-      type: webhook
-      payload:
-        - versionName=$BUILD_NUMBER
-      on_success: always
+  # Disable email notification
     - integrationName: email
       type: email
       on_success: never
