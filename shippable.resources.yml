@@ -14,3 +14,9 @@ resources:
       sourceName: builds/HelloWorld.war #update the repository name if needed
     seed:
       versionName: initial
+
+# Version resource
+  - name: release-version
+    type: version
+    seed:
+      versionName: "1.0.0"
