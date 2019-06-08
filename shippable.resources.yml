@@ -9,7 +9,7 @@ resources:
 # JFROG WAR reference
   - name: demo-war
     type: file
-    integration: Tomcat
+    integration: Artifactory
     pointer:
       sourceName: builds/HelloWorld.war #update the repository name if needed
     seed:
