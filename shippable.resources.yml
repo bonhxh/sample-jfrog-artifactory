@@ -26,3 +26,4 @@ resources:
     type: notification
     versionTemplate:
       method: email
+      recipients: "foo@foo.com"
