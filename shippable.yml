@@ -25,3 +25,11 @@ integrations:
   hub:
     - integrationName: Artifactory
       type: artifactory
+
+  notifications:
+    - integrationName: email
+      type: email
+      on_success: always
+      on_failure: always
+      on_cancel: always
+      on_pull_request: always
