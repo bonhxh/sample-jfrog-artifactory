@@ -32,3 +32,9 @@ integrations:
       payload:
         - versionName=$BUILD_NUMBER
       on_success: always
+    - integrationName: email
+      type: email
+      on_success: never
+      on_failure: never
+      on_cancel: never
+      on_pull_request: never
