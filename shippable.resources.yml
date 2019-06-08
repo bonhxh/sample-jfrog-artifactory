@@ -15,11 +15,9 @@ resources:
     seed:
       versionName: initial
 
-# JFROG WAR reference
-  - name: demo-test
-    type: file
-    integration: Tomcat
-    pointer:
-      sourceName: builds/test.war #update the repository name if needed
-    seed:
-      versionName: initial
+# Webhook resource to trigger assembly line
+  - name: webhook-deploy
+    type: webhook
+    versionTemplate:
+      webhookKey: "abcd_efgh"
+
