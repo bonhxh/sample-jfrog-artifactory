@@ -20,3 +20,7 @@ resources:
     type: version
     seed:
       versionName: "1.0.0"
+
+# Email notification
+  - name: email-notification
+    type: email
