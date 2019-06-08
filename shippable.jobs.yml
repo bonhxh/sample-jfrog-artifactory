@@ -12,8 +12,6 @@ jobs:
     steps:
       - IN: demo-war-manifest
         force: true
-      - IN: webhook-deploy
-        force: true
       - IN: demo-war-test-cls
       - TASK:
         - script: sudo rm -rf /opt/tomcat/webapps/HelloWorld.war
