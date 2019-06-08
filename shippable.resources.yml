@@ -14,9 +14,3 @@ resources:
       sourceName: builds/HelloWorld.war #update the repository name if needed
     seed:
       versionName: initial
-
-# Webhook resource to trigger assembly line
-  - name: webhook-deploy
-    type: webhook
-    versionTemplate:
-      webhookKey: "abcd_efghi"
