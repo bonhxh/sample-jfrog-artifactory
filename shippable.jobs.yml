@@ -11,8 +11,8 @@ jobs:
 # deploy job that deploys native war to cluster of VMs
   - name: demo-war-test-deploy
     type: deploy
-    always:
-      - NOTIFY: email-notification
+#    always:
+#      - NOTIFY: email-notification
     steps:
       - IN: demo-war-manifest
         force: true
