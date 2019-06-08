@@ -22,9 +22,9 @@ resources:
       versionName: "1.0.0"
 
 # Email notification
-  - name: email-notification
-    type: notification
-    versionTemplate:
-      method: email
-      recipients: 
-        - "foo@foo.com"
+#  - name: email-notification
+#    type: notification
+#    versionTemplate:
+#      method: email
+#      recipients: 
+#        - "foo@foo.com"
