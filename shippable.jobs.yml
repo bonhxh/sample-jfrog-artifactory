@@ -18,3 +18,10 @@ jobs:
       - TASK:
         - script: sudo rm -rf /opt/tomcat/webapps/HelloWorld.war
         - script: sudo cp /tmp/shippable/demo-war-manifest/demo-war/HelloWorld.war /opt/tomcat/webapps/HelloWorld.war
+
+#Release job    
+  - name: release-job
+    type: release
+    steps:
+      - IN: java-img-manifest
+      - IN: release-version
