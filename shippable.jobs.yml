@@ -23,5 +23,5 @@ jobs:
   - name: release-job
     type: release
     steps:
-      - IN: java-img-manifest
+      - IN: demo-war-manifest
       - IN: release-version
