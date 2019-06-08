@@ -26,9 +26,9 @@ integrations:
     - integrationName: Artifactory
       type: artifactory
 
-  # notifications:
-  #   - integrationName: #your event trigger integration name
-  #     type: webhook
-  #     payload:
-  #       - versionName=$BUILD_NUMBER
-  #     on_success: always
+  notifications:
+    - integrationName: webhook
+      type: webhook
+      payload:
+        - versionName=$BUILD_NUMBER
+      on_success: always
