@@ -26,11 +26,6 @@ integrations:
     - integrationName: Artifactory
       type: artifactory
 
-#  notifications:
-#  # Disable email notification
-#    - integrationName: email
-#      type: email
-#      on_success: never
-#      on_failure: never
-#      on_cancel: never
-#      on_pull_request: never
+  notifications:
+    - integrationName: email
+      type: email
