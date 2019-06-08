@@ -14,3 +14,12 @@ resources:
       sourceName: builds/HelloWorld.war #update the repository name if needed
     seed:
       versionName: initial
+
+# JFROG WAR reference
+  - name: demo-test
+    type: file
+    integration: Tomcat
+    pointer:
+      sourceName: builds/test.war #update the repository name if needed
+    seed:
+      versionName: initial
