@@ -14,5 +14,5 @@ jobs:
         force: true
       - IN: demo-war-test-cls
       - TASK:
-        - script: sudo rm -rf /usr/local/tomcat/webapps/HelloWorld.war
-        - script: sudo cp /tmp/shippable/demo-war-manifest/demo-war/HelloWorld.war /usr/local/tomcat/webapps/HelloWorld.war
+        - script: sudo rm -rf /opt/tomcat/webapps/HelloWorld.war
+        - script: sudo cp /tmp/shippable/demo-war-manifest/demo-war/HelloWorld.war /opt/tomcat/webapps/HelloWorld.war
