@@ -9,6 +9,8 @@ resources:
 # JFROG WAR reference
   - name: demo-war
     type: file
+    versionTemplate:
+      webhookKey: "abcd_efgh"
     integration: Tomcat
     pointer:
       sourceName: builds/HelloWorld.war #update the repository name if needed
