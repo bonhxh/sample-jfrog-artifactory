@@ -22,6 +22,7 @@ jobs:
 #Release job    
   - name: release-job
     type: release
+    bump: minor
     steps:
       - IN: demo-war-manifest
       - IN: release-version
