@@ -5,7 +5,7 @@ jobs:
     type: manifest
     steps:
     # Trigger this assembly line job after runCI job finished
-      - IN: sample-jfrog-artifactory
+      - IN: sample-jfrog-artifactory_runCI
       - IN: demo-war
 
 # deploy job that deploys native war to cluster of VMs
