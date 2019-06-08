@@ -19,4 +19,4 @@ resources:
   - name: webhook-deploy
     type: webhook
     versionTemplate:
-      webhookKey: "abcd_efgh"
+      webhookKey: "abcd_efghi"
