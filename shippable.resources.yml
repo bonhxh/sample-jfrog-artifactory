@@ -9,10 +9,14 @@ resources:
 # JFROG WAR reference
   - name: demo-war
     type: file
-    versionTemplate:
-      webhookKey: "abcd_efgh"
     integration: Tomcat
     pointer:
       sourceName: builds/HelloWorld.war #update the repository name if needed
     seed:
       versionName: initial
+
+# Webhook resource to trigger assembly line
+  - name: webhook-deploy
+    type: webhook
+    versionTemplate:
+      webhookKey: "abcd_efgh"
