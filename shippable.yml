@@ -16,7 +16,7 @@ build:
     options: '--privileged=true --net=bridge'
 
   ci:
-    - sudo wget http://mirrors.ibiblio.org/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
+    - xsudo wget http://mirrors.ibiblio.org/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
     - sudo tar xzf apache-maven-3.3.9-bin.tar.gz -C /usr/local && rm -f apache-maven-3.3.9-bin.tar.gz
     - ln -fs /usr/local/apache-maven-$3.3.9/bin/mvn /usr/bin
     - echo "export PATH=$PATH:/usr/local/apache-maven-3.3.9/bin" >> $HOME/.bashrc
@@ -30,12 +30,3 @@ integrations:
   hub:
     - integrationName: Artifactory
       type: artifactory
-
-  notifications:
-    - integrationName: email
-      type: email
-      on_success: always
-      on_failure: always
-      on_cancel: always
-      on_start: always
-      on_pull_request: always
