@@ -3,6 +3,11 @@ language: java
 jdk:
   - oraclejdk8
 
+# this config will only build the following branches: master
+branches:
+  only:
+    - master
+
 build:
   pre_ci_boot:
     image_name: drydock/u14
