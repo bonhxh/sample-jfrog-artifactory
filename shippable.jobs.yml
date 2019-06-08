@@ -18,7 +18,3 @@ jobs:
       - TASK:
         - script: sudo rm -rf /opt/tomcat/webapps/HelloWorld.war
         - script: sudo cp /tmp/shippable/demo-war-manifest/demo-war/HelloWorld.war /opt/tomcat/webapps/HelloWorld.war
-    always:
-      NOTIFY:
-        - name: email
-          sendFailingSnippet: true
